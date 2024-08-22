@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tema-claro.css">
+    <title>Desafío Encriptador De Texto</title>
+</head>
+
+<body>
+    <header class="encabezado">
+        <a class="encabezado-logo" href="https://www.aluracursos.com/" target="_blank">
+        <img  src="./assets/logo_azul.png" alt="Logo de Alura"></a>
+        <a class="icono-tema-claro" href="index.html">
+            <img src="./assets/luna.png" alt="Luna"></a>
+    </header>
+    <main class="contenido">
+        <section class="contenido-texto">
+            <h1 class="titulo-principal">Desafío Encriptador Alura</h1>
+            <textarea class="contenido-texto-original" cols="40" rows="10" placeholder="Ingrese aquí el texto" ></textarea>
+            <p class="condiciones-texto">Solo letra minúsculas y sin acentos</p>
+            <div class="contenido-botones">
+                <button class="boton-funcional" onclick="botonEncriptar()" id="botonEncriptar">Encriptar</button>
+                <button class="boton-funcional" onclick="botonDesencriptar()">Desencriptar</button>
+                <button class="boton-funcional" onclick="botonLimpiar()">Limpiar</button>
+            </div>
+        </section>
+        <section class="contenido-resultado">
+            <textarea class="texto-modificado" cols="25" rows="21" id="textoModificado" placeholder="Ningún mensaje fue encontrado"></textarea>
+            <p class="texto-informativo">Ingresa el texto que desees encriptar o <br>desencriptar.</p> 
+            <div class="boton-copiar ">
+                <button class="boton-copiar-desencriptar" onclick="copiarTexto()" id="botonCopiar" style="display: none;">Copiar</button>
+            </div>      
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="datos-desarrollador">Creado por Jhon S. Ardila - 2024</p>
+        <div class="contacto">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="./assets/instagram_azul.png" alt="Logo de Instagram"></a>
+            <a href="https://github.com/" target="_blank">
+                <img src="./assets/github_azul.png" alt="Logo de GitHub"></a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="./assets/linkedin_azul.png" alt="Logo de Linkedin"></a>  
+        </div>
+    </footer>
+<script src="encriptador.js"></script>
+</body>
+
+</html>
